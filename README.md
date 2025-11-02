@@ -23,8 +23,40 @@ When used during decoding, this model enables **token-level factuality control**
 | **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level labels | [sapirharary/RAGTruthPrefixes](https://huggingface.co/datasets/sapirharary/RAGTruthPrefixes) | MIT |
 
 ## Requirements
-TODO
-## Usage
-TODO
+To install dependencies, run:
+```bash
+pip install -r requirements.txt
+```
+## Usage Example
+Below is a minimal example showing how to use **PrefixNLI Controlled Decoding**  
+to generate faithful summaries with prefix-level entailment guidance.
+
+```bash
+python controlled_decoding.py \
+    --lm_model meta-llama/Llama-3.2-1B-Instruct \
+    --entailment_model sapirharary/MiniTruePrefixes \
+    --dataset_name xsum \
+    --dataset_split test \
+    --gpu 0 \
+    --output_csv results.csv
+```
+This example runs controlled decoding on the XSum dataset using meta-llama/Llama-3.2-1B-Instruct as the generator and sapirharary/MiniTruePrefixes as the entailment model.
+
+During generation, the entailment model evaluates each partial prefix and penalizes unfaithful continuations during decoding.
+The generated summaries and timing information are saved in results.csv.
+
+## MiniTruePrefixes
+The **MiniTruePrefixes** model expects its input in the following chat format:
+
+```python
+{"role": "user", "content": f"premise: {SOURCE_TEXT} hypothesis: {PREFIX_TEXT}"}
+```
+Where:
+- **SOURCE_TEXT** — the source document.  
+- **PREFIX_TEXT** — the summary prefix being evaluated for entailment.
+## Citation
+[todo]
+
+
 
 
