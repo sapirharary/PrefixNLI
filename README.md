@@ -19,8 +19,8 @@ When used during decoding, this model enables **token-level factuality control**
 | **MiniTruePrefixes** | Prefix-level entailment model used for Controlled Decoding | [sapirharary/MiniTruePrefixes](https://huggingface.co/sapirharary/MiniTruePrefixes) | MIT |
 | **MiniTrue** |Lightweight sentence-level entailment model | [sapirharary/MiniTruePrefixes](https://huggingface.co/sapirharary/MiniTrue) | MIT |
 | **PrefixNLI** | Training data derived from TrueTeacher and GPT-4 summaries with prefix-level entailment annotations | [sapirharary/PrefixNLI](https://huggingface.co/datasets/sapirharary/PrefixNLI) | CC-BY-NC-4.0 |
-| **SummEditsPrefixes** | Evaluation set based on SummEdits (Laban et al., 2023) with prefix-level entailment labels | [sapirharary/SummEditsPrefixes](https://huggingface.co/datasets/sapirharary/SummEditsPrefixes) | CC-BY-4.0 |
-| **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level annotations | [sapirharary/RAGTruthPrefixes](https://huggingface.co/datasets/sapirharary/RAGTruthPrefixes) | MIT |
+| **SummEditsPrefixes** | Evaluation set based on SummEdits (Laban et al., 2023) with prefix-level labels | [sapirharary/SummEditsPrefixes](https://huggingface.co/datasets/sapirharary/SummEditsPrefixes) | CC-BY-4.0 |
+| **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level labels | [sapirharary/RAGTruthPrefixes](https://huggingface.co/datasets/sapirharary/RAGTruthPrefixes) | MIT |
 
 ## Requirements
 TODO
