@@ -1,6 +1,6 @@
 # PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise
 
-Authors: Sapir Harary, Eran Hirsch, Aviv Slobodkin, David Wan, Mohit Bansal, and Ido Dagan.
+Authors: Sapir Harary, Eran Hirsch, Aviv Slobodkin, David Wan, Mohit Bansal and Ido Dagan.
 
 This repository contains the code for the paper "PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise".
 
