@@ -1,7 +1,7 @@
-**PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise**  
-Sapir Harary, Eran Hirsch, Aviv Slobodkin, David Wan, Mohit Bansal, and Ido Dagan  
+# PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise
 
----
+Authors: Sapir Harary, Eran Hirsch, Aviv Slobodkin, David Wan, Mohit Bansal, and Ido Dagan
+This repository contains the code for the paper "PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise".
 
 ## Overview
 
@@ -10,8 +10,6 @@ This repository provides the implementation of our **PrefixNLI Controlled Decodi
 The core model, **MiniTruePrefixes**, is a fine-tuned LLaMA-1B-Instruct entailment model trained to assess whether a text *prefix* is entailed by a given premise. It is specifically optimized for evaluating factual consistency in summarization tasks.
 
 When used during decoding, this model enables **token-level factuality control**, allowing the generator to detect and mitigate hallucinations as they emerge.
-
----
 
 ## Models and Datasets on Hugging Face
 
@@ -23,9 +21,9 @@ When used during decoding, this model enables **token-level factuality control**
 | **SummEditsPrefixes** | Evaluation set based on SummEdits (Laban et al., 2023) with prefix-level entailment labels | [sapirharary/SummEditsPrefixes](https://huggingface.co/datasets/sapirharary/SummEditsPrefixes) | CC-BY-4.0 |
 | **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level annotations | [sapirharary/RAGTruthPrefixes](https://huggingface.co/datasets/sapirharary/RAGTruthPrefixes) | MIT |
 
----
-
+## Requirements
+TODO
 ## Usage
-
+TODO
 
 
