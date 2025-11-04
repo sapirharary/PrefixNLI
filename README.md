@@ -2,7 +2,7 @@
 
 Authors: Sapir Harary, Eran Hirsch, Aviv Slobodkin, David Wan, Mohit Bansal and Ido Dagan.
 
-This repository contains the code for the paper "PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise".
+This repository contains the code for the paper "[PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise](https://arxiv.org/abs/2511.01359)".
 
 ## Overview
 
@@ -55,7 +55,17 @@ Where:
 - **SOURCE_TEXT** — the source document.  
 - **PREFIX_TEXT** — the summary prefix being evaluated for entailment.
 ## Citation
-[todo]
+```
+@misc{harary2025prefixnlidetectingfactualinconsistencies,
+      title={PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise}, 
+      author={Sapir Harary and Eran Hirsch and Aviv Slobodkin and David Wan and Mohit Bansal and Ido Dagan},
+      year={2025},
+      eprint={2511.01359},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2511.01359}, 
+}
+```
 
 
 
