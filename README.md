@@ -1,8 +1,6 @@
 # PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise
 
-Authors: Sapir Harary, Eran Hirsch, Aviv Slobodkin, David Wan, Mohit Bansal and Ido Dagan.
-
-This repository contains the code for the paper "[PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise](https://arxiv.org/abs/2511.01359)".
+This repository contains the code for the paper "PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise".
 
 ## Overview
 
@@ -16,11 +14,11 @@ When used during decoding, this model enables **token-level factuality control**
 
 | Resource | Description | Hugging Face Link | License |
 |-----------|-------------|------------------|----------|
-| **MiniTruePrefixes** | Prefix-level entailment model used for Controlled Decoding | [sapirharary/MiniTruePrefixes](https://huggingface.co/sapirharary/MiniTruePrefixes) | MIT |
-| **MiniTrue** |Lightweight sentence-level entailment model | [sapirharary/MiniTruePrefixes](https://huggingface.co/sapirharary/MiniTrue) | MIT |
-| **PrefixNLI** | Training data derived from TrueTeacher and GPT-4 summaries with prefix-level entailment annotations | [sapirharary/PrefixNLI](https://huggingface.co/datasets/sapirharary/PrefixNLI) | CC-BY-NC-4.0 |
-| **SummEditsPrefixes** | Evaluation set based on SummEdits (Laban et al., 2023) with prefix-level labels | [sapirharary/SummEditsPrefixes](https://huggingface.co/datasets/sapirharary/SummEditsPrefixes) | CC-BY-4.0 |
-| **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level labels | [sapirharary/RAGTruthPrefixes](https://huggingface.co/datasets/sapirharary/RAGTruthPrefixes) | MIT |
+| **MiniTruePrefixes** | Prefix-level entailment model used for Controlled Decoding | [MiniTruePrefixes]() | MIT |
+| **MiniTrue** |Lightweight sentence-level entailment model | [MiniTruePrefixes]() | MIT |
+| **PrefixNLI** | Training data derived from TrueTeacher and GPT-4 summaries with prefix-level entailment annotations | [PrefixNLI]() | CC-BY-NC-4.0 |
+| **SummEditsPrefixes** | Evaluation set based on SummEdits (Laban et al., 2023) with prefix-level labels | [SummEditsPrefixes]() | CC-BY-4.0 |
+| **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level labels | [RAGTruthPrefixes]() | MIT |
 
 ## Requirements
 To install dependencies, run:
@@ -34,13 +32,13 @@ to generate faithful summaries with prefix-level entailment guidance.
 ```bash
 python controlled_decoding.py \
     --lm_model meta-llama/Llama-3.2-1B-Instruct \
-    --entailment_model sapirharary/MiniTruePrefixes \
+    --entailment_model MiniTruePrefixes \
     --dataset_name xsum \
     --dataset_split test \
     --gpu 0 \
     --output_csv results.csv
 ```
-This example runs controlled decoding on the XSum dataset using meta-llama/Llama-3.2-1B-Instruct as the generator and sapirharary/MiniTruePrefixes as the entailment model.
+This example runs controlled decoding on the XSum dataset using meta-llama/Llama-3.2-1B-Instruct as the generator and MiniTruePrefixes as the entailment model.
 
 During generation, the entailment model evaluates each partial prefix and penalizes unfaithful continuations during decoding.
 The generated summaries and timing information are saved in results.csv.
@@ -54,18 +52,6 @@ The **MiniTruePrefixes** model expects its input in the following chat format:
 Where:
 - **SOURCE_TEXT** — the source document.  
 - **PREFIX_TEXT** — the summary prefix being evaluated for entailment.
-## Citation
-```
-@misc{harary2025prefixnlidetectingfactualinconsistencies,
-      title={PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise}, 
-      author={Sapir Harary and Eran Hirsch and Aviv Slobodkin and David Wan and Mohit Bansal and Ido Dagan},
-      year={2025},
-      eprint={2511.01359},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2511.01359}, 
-}
-```
 
 
 

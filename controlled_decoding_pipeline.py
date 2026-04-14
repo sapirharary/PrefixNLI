@@ -11,7 +11,7 @@ def parse_args():
     parser.add_argument("--gpu", type=str, default="0")
     parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument("--lm_model", type=str, default="meta-llama/Llama-3.2-1B-Instruct")
-    parser.add_argument("--entailment_model", type=str, default="sapirharary/MiniTruePrefixes", choices=["sapirharary/MiniTruePrefixes", "sapirharary/MiniTrue"])
+    parser.add_argument("--entailment_model", type=str, default="MiniTruePrefixes", choices=["MiniTruePrefixes", "MiniTrue"])
     parser.add_argument("--dataset_name", type=str, default="xsum")
     parser.add_argument("--dataset_split", type=str, default="test")
     parser.add_argument("--dataset_document_column_name", type=str, default="document")
