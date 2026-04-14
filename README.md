@@ -11,14 +11,15 @@ The core model, **MiniTruePrefixes**, is a fine-tuned LLaMA-1B-Instruct entailme
 When used during decoding, this model enables **token-level factuality control**, allowing the generator to detect and mitigate hallucinations as they emerge.
 
 ## Models and Datasets on Hugging Face
+For anonymity, the actual links are omitted here and provided in the non-anonymous version.
 
 | Resource | Description | Hugging Face Link | License |
 |-----------|-------------|------------------|----------|
-| **MiniTruePrefixes** | Prefix-level entailment model used for Controlled Decoding | [MiniTruePrefixes]() | MIT |
-| **MiniTrue** |Lightweight sentence-level entailment model | [MiniTruePrefixes]() | MIT |
-| **PrefixNLI** | Training data derived from TrueTeacher and GPT-4 summaries with prefix-level entailment annotations | [PrefixNLI]() | CC-BY-NC-4.0 |
-| **SummEditsPrefixes** | Evaluation set based on SummEdits (Laban et al., 2023) with prefix-level labels | [SummEditsPrefixes]() | CC-BY-4.0 |
-| **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level labels | [RAGTruthPrefixes]() | MIT |
+| **MiniTruePrefixes** | Prefix-level entailment model used for Controlled Decoding | MiniTruePrefixes | MIT |
+| **MiniTrue** |Lightweight sentence-level entailment model | MiniTruePrefixes | MIT |
+| **PrefixNLI** | Training data derived from TrueTeacher and GPT-4 summaries with prefix-level entailment annotations | PrefixNLI | CC-BY-NC-4.0 |
+| **SummEditsPrefixes** | Evaluation set based on SummEdits (Laban et al., 2023) with prefix-level labels | SummEditsPrefixes | CC-BY-4.0 |
+| **RAGTruthPrefixes** | Evaluation set derived from RAGTruth (Niu et al., 2024) with prefix-level labels | RAGTruthPrefixes | MIT |
 
 ## Requirements
 To install dependencies, run:
