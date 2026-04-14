@@ -52,7 +52,3 @@ The **MiniTruePrefixes** model expects its input in the following chat format:
 Where:
 - **SOURCE_TEXT** — the source document.  
 - **PREFIX_TEXT** — the summary prefix being evaluated for entailment.
-
-
-
-
